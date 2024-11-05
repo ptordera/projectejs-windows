@@ -81,10 +81,8 @@ const buttonDecimal = document.createElement('button');
 buttonDecimal.textContent = '.';
 buttonDecimal.className = "bg-gray-600 hover:bg-gray-700 text-white p-4 rounded";
 buttonDecimal.addEventListener('click', () => {
-    if (currentDisplay.includes('.')) {
         currentDisplay += '.';
         updateDisplay();
-    }
 });
 document.querySelector('.grid').appendChild(buttonDecimal);
 
